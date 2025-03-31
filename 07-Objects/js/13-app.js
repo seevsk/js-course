@@ -1,15 +1,18 @@
-const producto = {
-    nombre: 'Monitor 20 pulgadas',
-    precio: 300,
-    disponible: true,
+
+const product = {
+    name: 'Monitor 20"',
+    price: 300,
+    available: true,
 }
-// .keys, obtiene las llaves de un objeto mediante una array (Arreglo)
-console.log(Object.keys(producto));
 
-// .values, obtiene los valores de un objeto mediante una array
+// Gets the keys of an object
+// and returns them in an array
+console.log(Object.keys(product));
 
-console.log(Object.values(producto));
+// Gets the values of an object
+// and returns them in an array
+console.log(Object.values(product));
 
-// . entries, obtiene las llaves y los valores de un objeto mediante un array
-
-console.log(Object.entries(producto));
+// Gets the keys and values of an object
+// and returns them in an array.
+console.log(Object.entries(product));

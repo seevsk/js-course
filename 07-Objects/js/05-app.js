@@ -1,23 +1,25 @@
-const producto = {
-    nombre: 'Monitor 20 pulgadas',
-    precio: 300,
-    disponible: true,
-    informacion: {
-        medidas: {
-        peso: '1kg',
-        medida: '1m',
+
+const product = {
+    name: 'Monitor 20"',
+    price: 300,
+    available: true,
+    information: {
+        measures: {
+        weight: '1kg',
+        size: '1m',
         }, 
-        fabricacion: {
-        pais: 'China',
+        
+        manufacturing: {
+        country: 'China',
         }
     },
 
 }
 
-console.log(producto);
-console.log(producto.informacion);
-console.log(producto.informacion.medidas.peso);
-console.log(producto.informacion.medidas.medida);
-console.log(producto.informacion.fabricacion);
-console.log(producto.informacion.fabricacion.pais);
+console.log(product);
+console.log(product.information);
+console.log(product.information.measures.weight);
+console.log(product.information.measures.size);
+console.log(product.information.manufacturing);
+console.log(product.information.manufacturing.country);
 

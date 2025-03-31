@@ -1,20 +1,23 @@
-//Object Literal
-const producto = {
-    nombre: 'Monitor 20 pulgadas',
-    precio: 300,
-    disponible: true
+
+// Object Literal
+const product = {
+    name: 'Monitor 20"',
+    price: 300,
+    available: true
 }
 
-//Object Constructor
-
-function Producto(nombre, precio) {
-    this.nombre = nombre;
-    this.precio = precio;
-    this.disponible = true;
+// Object Constructor - is defined by a function
+function productConstructor(name, price, available) {
+    this.name = name;
+    this.price = price;
+    this.available = available;
 }
 
-const producto2 = new Producto('Monitor 24k', 320);
-console.log(producto2);
+// Reusable to create multiple objects
+const product2 = new 
+        productConstructor('Monitor 24"', 320, true);
+console.log(product2);
 
-const producto3 = new Producto('Fonito 24k', 20);
-console.log(producto3);
+const product3 = new 
+        productConstructor('Laptop"', 20, false);
+console.log(product3);

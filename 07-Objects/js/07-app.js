@@ -1,14 +1,14 @@
-const producto = {
-    nombre: 'Monitor 20 pulgadas',
-    precio: 300,
-    disponible: true,
+
+const product = {
+    name: 'Monitor 20"',
+    price: 300,
+    available: true,
 }
 
-// La variable con "const" una vez que es definida no se puede cambiar (reasignar) el valor, sin embargo los objetos si se pueden reasignar (esto lo menciona ya que esta generando el objeto con "const" = {}, que es una variable constante, ten en cuenta esto para que no te confundas).
+// The "properties of an object can be overwritten and
+// deleted", regardless of whether its variable is “const”.
+product.available = false 
+delete product.price;
 
-producto.disponible = false // ojo solo las propiedades dentro del objeto se pueden reescribir o eliminar.
-
-delete producto.precio;
-
-console.log(producto);
-console.log(producto.disponible);
+console.log(product);
+console.log(product.available);

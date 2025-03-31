@@ -1,21 +1,26 @@
-const producto = {
-    nombre: 'Monitor 20 pulgadas',
-    precio: 300,
-    disponible: true,
-    informacion: {
-        medidas: {
-            peso: '1kg',
-            medida: '1m'
-        },
-        fabricacion: {
-            pais: 'China',
+
+const product = {
+    name: 'Monitor 20"',
+    price: 300,
+    available: true,
+    information: {
+        measures: {
+        weight: '1kg',
+        size: '1m',
+        }, 
+        
+        manufacturing: {
+        country: 'China',
         }
-    }
+    },
 }
 
-const {nombre, informacion, informacion: {fabricacion, fabricacion:{pais}}} = producto
+// Selective Destructuring
+const {name, information, 
+    information: 
+    {manufacturing, manufacturing:{country}}} = product;
 
-console.log(nombre);
-console.log(informacion);
-console.log(fabricacion);
-console.log(pais);
+console.log(name);
+console.log(information);
+console.log(manufacturing);
+console.log(country);

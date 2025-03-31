@@ -1,16 +1,20 @@
-'use strict'; //Modo estricto
+'use strict';
 
-const producto = {
-    nombre: 'Monitor 20 pulgadas',
-    precio: 300,
-    disponible: true,
+const product = {
+    name: 'Monitor 20"',
+    price: 300,
+    available: true,
 }
 
-Object.freeze(producto); //Congela el objeto y sus propiedades, ya no se pueden modificar, tampoco agregar o eliminar.
+// Freezes the object and its properties 
+Object.freeze(product); 
 
-// producto.imagen = 'imagen.jpg';
-// producto.disponible = false;
-// delete producto.nombre;
+// // You cannot add properties
+// product.image = 'image.jpg';
+// // You cannot modify properties
+// product.available = false;
+// // You cannot delete properties
+// delete product.name;
 
-console.log(Object.isFrozen(producto));
-
+// Validates if an object is frozen
+console.log(Object.isFrozen(product));

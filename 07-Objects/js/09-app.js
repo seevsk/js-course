@@ -1,16 +1,18 @@
 'use strict'; 
 
-const producto = {
-    nombre: 'Monitor 20 pulgadas',
-    precio: 300,
-    disponible: true,
+const product = {
+    name: 'Monitor 20"',
+    price: 300,
+    available: true,
 }
 
-Object.seal(producto); // A diferencia de freeze, se pueden modificar propiedades (existentes), eliminar y agregar nou
+// Unlike the freeze, you can modify properties.
+// You cannot delete or add properties
+Object.seal(product); 
 
-producto.disponible = false;
-// producto.imagen = 'imagen.jpg';
-// delete producto.nombre;
+product.available = false;
 
-console.log(producto);
-console.log(Object.isSealed(producto));
+console.log(product);
+
+// Valid if sealed
+console.log(Object.isSealed(product));

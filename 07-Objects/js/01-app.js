@@ -1,17 +1,13 @@
-const nombre = 'Monitor 20 pulgadas';  
-const precio = 300;
-const disponible = true;
 
-// Un object agrupa todo en una sola variable ...
-
-// Cuando veas una variable es = {} mas una llaves es un buen indicativo que es un objeto
+const name = 'Monitor 20"';  
+const price = 300;
+const available = true;
 
 // Object Literal
-
-const producto = {
-    nombre: 'Monitor de Pulgadas',
-    precio: 300,
-    disponible: true,
+const product = {
+    name: 'Monitor 30"',
+    price: 300,
+    available: true,
 }
 
-console.log(producto);
+console.log(product);

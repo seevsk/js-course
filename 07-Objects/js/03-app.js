@@ -1,15 +1,14 @@
-const producto = {
-    nombre: 'Monitor 20 pulgadas',
-    precio: 300,
-    disponible: true,
+
+const product = {
+    name: 'Monitor 20"',
+    price: 300,
+    available: true,
 }
 
-// Agregar nuevas propiedades al objeto (Despues)
-producto.imagen = 'imagen.jpg';
+// Add new properties to the object
+product.image = 'image.jpg';
+console.log(product);
 
-// Eliminar propiedades del objeto (despues)
-delete producto.disponible;
-
-
-
-console.log(producto);
+// Delete object properties
+delete product.available;
+console.log(product);

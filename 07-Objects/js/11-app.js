@@ -1,23 +1,27 @@
 
-//. this es una forma de referirse a al objeto en si mismo, sin ello buscara por fuera. NO se puede utilizar de nombre para crear variables.
+// In a constructor, this points to the instance created with "new".
 
-const producto = {
-    nombre: 'Monitor 20 pulgadas',
-    precio: 300,
-    disponible: true,
-    mostrarInfo: function() {
-        console.log(`El producto: ${this.nombre} tiene un precio de ${this.precio}`)
+// It is not recommended to use “this” in functions of type arrow. Functions with "normal structures" yes.
+
+
+// In an object, this points to the "object itself".
+const product = {
+    name: 'Monitor 20"',
+    price: 300,
+    available: true,
+    showInfo: function() {
+        console.log(`The product: ${this.name} has a price of ${this.price}`);
     }
 }
 
-const producto2 = {
-    nombre: 'fonito',
-    precio: 20,
-    disponible: true,
-    mostrarInfo: function() {
-        console.log(`El producto: ${this.nombre} tiene un precio de ${this.precio}`)
+const product2 = {
+    name: 'Laptop',
+    price: 20,
+    available: true,
+    showInfo: function() {
+        console.log(`The product: ${this.name} has a price of ${this.price}`)
     }
 }
 
-producto.mostrarInfo();
-producto2.mostrarInfo();
+product.showInfo();
+product2.showInfo();

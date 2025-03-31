@@ -1,18 +1,17 @@
-const producto = {
-    nombre: 'Monitor 20 pulgadas',
-    precio: 300,
-    disponible: true,
+
+const product = {
+    name: 'Monitor 20"',
+    price: 300,
+    available: true,
 }
 
-//Agregar propiedad de un objeto a una nueva variable sin la necesidade sobreescribirla (Manera Antigua)
+// const name = product.name; (optimizes this statement)
 
-// const nombre = producto.nombre;
+// Destructuring of Objects
+// Convert the properties of an object into variables
+const {name, price, available} = product;
 
-//Nueva Manera ECMA6 - Destructuring
-
-const {nombre, precio, disponible} = producto;
-
-console.log(producto.nombre);
-console.log(nombre);
-console.log(precio);
-console.log(disponible)
+console.log(product.name); // =
+console.log(name); // =
+console.log(price);
+console.log(available);
